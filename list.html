@@ -1,0 +1,255 @@
+<html>
+   <head>
+     
+    <link rel="stylesheet" href="css/vendors/all.min.css">
+    <!-- <link rel="stylesheet" href="css/vendors/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css"> 
+
+  </head>
+  <body>
+
+
+   
+
+                 
+    <div class="cont">
+      <div class="over-lay">
+              <h2>To Do List</h2>
+      </div>
+      <input type="text" placeholder="entar value">
+          <ul class="list">
+
+          <li>add a list <i class="fa fa-trash" aria-hidden="true"></i></li>
+          <li>add a list <i class="fa fa-trash" aria-hidden="true"></i></li>
+          <li>add a list <i class="fa fa-trash" aria-hidden="true"></i></li>
+          <li>add a list <i class="fa fa-trash" aria-hidden="true"></i></li>
+
+          </ul>
+       
+   
+
+
+  </div> <!--.cont-->
+
+
+
+
+
+
+
+
+
+
+    
+   <script src="js/vendors/jquery-3-4-1.min.js"></script>
+   <script src="js/vendors/popper.min.js"></script>
+   <script src="js/vendors/bootstrap.min.js"></script>
+   <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("input[type='text']").keypress(function(event)
+{
+    if(event.which===13)
+    {
+        var todoText = $(this).val();
+        // $(this).val = "";
+        $("ul").append("<li><i class='fas fa-trash'></i> "+todoText+"</li>");
+        $('ul li i').click(function(){
+            $(this).parent().fadeOut();
+            $(this).val("");
+
+        });
+
+    }
+});
+  
+ 
+  });
+  $(document).ready(function(){
+      $('ul li i').click(function(){
+
+        $(this).parent().fadeOut();
+
+      });
+
+  });
+
+  
+
+
+
+// var x0 = 0;
+// var x1 = 0;
+// var x2 = 0;
+// var x3 = 0;
+// var x4 = 0;
+// var x5 = 0;
+// var x6 = 0;
+// var x7 = 0;
+// var x8 = 0;
+// var x9 = 0;
+// var x10 = 0;
+// var x11 = 0;
+// var x12 = 0;
+// var x13 = 0;
+// var x14 = 0;
+// var x15 = 0;
+// var x16 = 0;
+// var y0 = $('#h0').text();
+// var y = $('#h').text();
+// var y1 = $('#h1').text();
+// var y2 = $('#h2').text();
+// var y3 = $('#h3').text();
+// var y4 = $('#h4').text();
+// var y5 = $('#h5').text();
+// var y6 = $('#h6').text();
+// var y7 = $('#h7').text();
+// var y8 = $('#h8').text();
+// var y9 = $('#h9').text();
+// var y10 = $('#h10').text();
+// var y11 = $('#h11').text();
+// var y12 = $('#h12').text();
+// var y13 = $('#h13').text();
+// var y14 = $('#h14').text();
+// var y15 = $('#h15').text();
+// var y16 = $('#h16').text();
+// var z ;
+// z = x0+x+x1+x2+x3+x4+x5+x6+x7+x8+x9+x10+x11+x12+x13+x14+x15+x16;
+// $('#m0' ).click(function(){
+//   x0++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x0+"x"+y0+"</li>")
+
+// })
+// $('#m' ).click(function(){
+//   x++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x+"x"+y+"</li>")
+
+// })
+// $('#m1' ).click(function(){
+//   x1++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x1+"x"+y1+"</li>")
+
+// })
+// $('#m2' ).click(function(){
+//   x2++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x2+"x"+y2+"</li>")
+
+// })
+// $('#m3' ).click(function(){
+//   x3++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x3+"x"+y3+"</li>")
+
+// })
+// $('#m4' ).click(function(){
+//   x4++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x4+"x"+y4+"</li>")
+
+// })
+// $('#m5' ).click(function(){
+//   x5++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x5+"x"+y5+"</li>")
+
+// })
+// $('#m6' ).click(function(){
+//   x6++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x6+"x"+y6+"</li>")
+
+// })
+// $('#m7' ).click(function(){
+//   x7++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x7+"x"+y7+"</li>")
+
+// })
+// $('#m8' ).click(function(){
+//   x8++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x8+"x"+y8+"</li>")
+
+// })
+// $('#m9' ).click(function(){
+//   x9++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x9+"x"+y9+"</li>")
+
+// })
+// $('#m10' ).click(function(){
+//   x10++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x10+"x"+y10+"</li>")
+
+// })
+// $('#m11' ).click(function(){
+//   x11++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x11+"x"+y11+"</li>")
+
+// })
+// $('#m12' ).click(function(){
+//   x12++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x12+"x"+y12+"</li>")
+
+// })
+// $('#m13' ).click(function(){
+//   x13++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x13+"x"+y13+"</li>")
+
+// })
+// $('#m14' ).click(function(){
+//   x14++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x14+"x"+y14+"</li>")
+
+// })
+// $('#m15' ).click(function(){
+//   x15++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x15+"x"+y15+"</li>")
+
+// })
+// $('#m16' ).click(function(){
+//   x16++;
+//   document.getElementById('cont').textContent = z;
+//   $('.hid').hide();
+//   $('.tl ul').append("<li>"+x16+"x"+y16+"</li>")
+
+// })
+   
+
+
+    </script>
+    
+    
+    
+    </body>
+
+</html>
+
